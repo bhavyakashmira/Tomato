@@ -18,6 +18,9 @@ app.use(cors())
 app.get("/", (req , res) => {
     res.send("working")
 })
+app.get("/home", (req ,res) => {
+    res.send("home")
+})
 
 //db connection
 connectDb();
